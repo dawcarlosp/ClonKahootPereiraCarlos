@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mostrar logo y desplegable</title>
-    <script  src="js/app.js"></script>
+    <script  src="js/app.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,5 +12,16 @@
         <img src="imgs/ajup.png" alt="cajup">
         <p id="logoTexto">Desarrollado por Carlos Pereira</p>
     </div>
+    <dialog id="dialogo">
+        <h1>Juegos disponibles!</h1>
+        <select name="juegos" id=juegos">
+            <option value="">Programación</option>
+            <option value="">Bases de datos</option>
+            <option value="">Lenguaje de marcas</option>
+            <option value="">Sistemas informáticos</option>
+            <option value="">Entornos de desarrollo</option>
+            <option value="">Inglés</option>
+        </select>
+    </dialog>
 </body>
 </html>

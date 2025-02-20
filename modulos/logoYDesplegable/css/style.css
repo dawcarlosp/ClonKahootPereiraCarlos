@@ -16,6 +16,25 @@ body{
 #logoTexto{
     align-self: flex-end;
 }
+#dialogo{
+    background: #250b57;
+    display: flex;
+    flex-direction: column;
+   padding: 50px;
+   border-radius: 10%;
+}
+/* Hay que agregar lo de abajo, porque yo le aplique display flex,
+lo que anula el comportamiento por defecto que es display: none y el dialogo se muestra siempre */
+#dialogo:not([open]) {
+    display: none;
+}
+select{
+    background: #250b70;
+    color: white;
+}
+h1{
+    color: white;
+}
 @keyframes logo {
     0%{
         transform: scale(1.1);
