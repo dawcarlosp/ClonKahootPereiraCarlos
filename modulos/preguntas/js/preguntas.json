@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "pregunta": "¿En qué año se descubrió América?",
+        "respuestas": [
+            { "texto": "1492", "correcta": true },
+            { "texto": "1776", "correcta": false },
+            { "texto": "1600", "correcta": false },
+            { "texto": "1510", "correcta": false }
+        ]
+    },
+    {
+        "id": 2,
+        "pregunta": "¿Quién fue el primer emperador de Roma?",
+        "respuestas": [
+            { "texto": "Julio César", "correcta": false },
+            { "texto": "Augusto", "correcta": true },
+            { "texto": "Nerón", "correcta": false },
+            { "texto": "Calígula", "correcta": false }
+        ]
+    },
+    {
+        "id": 3,
+        "pregunta": "¿En qué año comenzó la Primera Guerra Mundial?",
+        "respuestas": [
+            { "texto": "1914", "correcta": true },
+            { "texto": "1939", "correcta": false },
+            { "texto": "1898", "correcta": false },
+            { "texto": "1812", "correcta": false }
+        ]
+    },
+    {
+        "id": 4,
+        "pregunta": "¿Quién fue el líder de la Revolución Rusa de 1917?",
+        "respuestas": [
+            { "texto": "Lenin", "correcta": true },
+            { "texto": "Stalin", "correcta": false },
+            { "texto": "Trotsky", "correcta": false },
+            { "texto": "Gorbachev", "correcta": false }
+        ]
+    },
+    {
+        "id": 5,
+        "pregunta": "¿Cuál fue la causa principal de la Segunda Guerra Mundial?",
+        "respuestas": [
+            { "texto": "El ataque a Pearl Harbor", "correcta": false },
+            { "texto": "La invasión de Polonia por Alemania", "correcta": true },
+            { "texto": "El asesinato del archiduque Francisco Fernando", "correcta": false },
+            { "texto": "La Revolución Francesa", "correcta": false }
+        ]
+    },
+    {
+        "id": 6,
+        "pregunta": "¿Quién fue el primer presidente de los Estados Unidos?",
+        "respuestas": [
+            { "texto": "Thomas Jefferson", "correcta": false },
+            { "texto": "George Washington", "correcta": true },
+            { "texto": "Abraham Lincoln", "correcta": false },
+            { "texto": "John Adams", "correcta": false }
+        ]
+    },
+    {
+        "id": 7,
+        "pregunta": "¿En qué año cayó el Muro de Berlín?",
+        "respuestas": [
+            { "texto": "1989", "correcta": true },
+            { "texto": "1991", "correcta": false },
+            { "texto": "1975", "correcta": false },
+            { "texto": "1961", "correcta": false }
+        ]
+    },
+    {
+        "id": 8,
+        "pregunta": "¿Cuál fue la civilización que construyó Machu Picchu?",
+        "respuestas": [
+            { "texto": "Azteca", "correcta": false },
+            { "texto": "Maya", "correcta": false },
+            { "texto": "Inca", "correcta": true },
+            { "texto": "Olmeca", "correcta": false }
+        ]
+    },
+    {
+        "id": 9,
+        "pregunta": "¿Quién escribió 'El Príncipe', un tratado político del siglo XVI?",
+        "respuestas": [
+            { "texto": "Platón", "correcta": false },
+            { "texto": "Maquiavelo", "correcta": true },
+            { "texto": "Aristóteles", "correcta": false },
+            { "texto": "Hobbes", "correcta": false }
+        ]
+    },
+    {
+        "id": 10,
+        "pregunta": "¿Cuál de estos eventos marcó el fin de la Edad Media?",
+        "respuestas": [
+            { "texto": "La Revolución Industrial", "correcta": false },
+            { "texto": "La caída de Constantinopla", "correcta": true },
+            { "texto": "El Descubrimiento de América", "correcta": false },
+            { "texto": "La Reforma Protestante", "correcta": false }
+        ]
+    }
+]
