@@ -5,6 +5,7 @@ let dialog = document.getElementById("modal");
 let botones = document.querySelectorAll("button");
 let posiblesRespuestas = document.getElementById("posiblesRespuestas");
 let h2 = document.getElementById("pregunta");
+/*
 let intervalo = setInterval(cuentaAtras, 1000);
 function cuentaAtras (){
     h1.textContent = segundos - aux;
@@ -16,6 +17,7 @@ function cuentaAtras (){
         dialog.close();
     }
 }
+    */
 async function obtenerPreguntas() {
     try {
       const response = await fetch("js/preguntas.json");
@@ -23,8 +25,11 @@ async function obtenerPreguntas() {
         throw new Error("Error al obtener las preguntas");
       }
       const preguntas = await response.json();
-      preguntas.forEach(pregunta => {
-        h2.textContent = pregunta.pregunta;
+      preguntas.forEach((pregunta, index) => {
+        setTimeout(() =>{
+            h2.textContent = pregunta.pregunta;
+            botones.forEach(boton => boton.textContent = pregunta.repuestas)
+        }, 10000*index)
       })
     } catch (error) {
       console.error("Error:", error);
