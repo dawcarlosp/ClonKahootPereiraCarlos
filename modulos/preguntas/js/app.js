@@ -4,6 +4,7 @@ let h1 = document.getElementById("cuentaAtras");
 let dialog = document.getElementById("modal");
 let botones = document.querySelectorAll("button");
 let posiblesRespuestas = document.getElementById("posiblesRespuestas");
+let h2 = document.getElementById("pregunta");
 let intervalo = setInterval(cuentaAtras, 1000);
 function cuentaAtras (){
     h1.textContent = segundos - aux;
@@ -22,9 +23,8 @@ async function obtenerPreguntas() {
         throw new Error("Error al obtener las preguntas");
       }
       const preguntas = await response.json();
-      console.log(preguntas);
       preguntas.forEach(pregunta => {
-        alert(pregunta.id)
+        h2.textContent = pregunta.pregunta;
       })
     } catch (error) {
       console.error("Error:", error);
