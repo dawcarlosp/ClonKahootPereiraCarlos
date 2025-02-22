@@ -42,7 +42,7 @@ async function obtenerPreguntas() {
               boton.addEventListener("click", () => validarRespuestas(boton.value) )
             })
             
-        }, 12000*index)
+        }, 13000*index)
       })
     } catch (error) {
       console.error("Error:", error);
