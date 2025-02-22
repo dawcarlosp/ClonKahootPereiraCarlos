@@ -38,7 +38,7 @@ async function obtenerPreguntas() {
               posiblesRespuestas.appendChild(boton);
               boton.addEventListener("click", () => validarRespuestas(boton.value) )
             })
-            botones.forEach(boton => boton.textContent = respuestas[3].texto)
+            
         }, 10000*index)
       })
     } catch (error) {
