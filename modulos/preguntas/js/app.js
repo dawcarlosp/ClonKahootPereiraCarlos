@@ -28,11 +28,15 @@ async function obtenerPreguntas() {
       preguntas.forEach((pregunta, index) => {
         setTimeout(() =>{
             h2.textContent = pregunta.pregunta;
+            posiblesRespuestas.innerHTML ="";
             let respuestas = pregunta.respuestas;
             respuestas.forEach((respuesta)  =>
-            {let boton = document.createElement("button");
+            { 
+              let boton = document.createElement("button");
+              boton.value = respuesta.correcta;
               boton.textContent = respuesta.texto;
               posiblesRespuestas.appendChild(boton);
+              boton.addEventListener("click", () => validarRespuestas(boton.value) )
             })
             botones.forEach(boton => boton.textContent = respuestas[3].texto)
         }, 10000*index)
@@ -42,13 +46,11 @@ async function obtenerPreguntas() {
     }
   }
   obtenerPreguntas();
-/*
-botones.forEach(boton => boton.addEventListener("click", function (){validarRespuestas(boton.value)}));
+
 function validarRespuestas(valor){
-    if(valor === "C"){
+    if(valor === "true"){
         alert("Respuesta correcta");
     }else{
         alert("Respuesta incorrecta");
     }
 }
-*/
