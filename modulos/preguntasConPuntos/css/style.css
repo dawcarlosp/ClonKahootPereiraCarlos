@@ -13,6 +13,9 @@ h1{
     padding: 10px;
     border-radius: 10px;
 }
+h2{
+    cursor: pointer;
+}
 #cuentaAtras{
     display: flex;
     flex-direction: column;
@@ -25,15 +28,23 @@ h1{
     align-items: center;
     border-radius: 10px;
 }
+#posiblesRespuestas{
+    display: flex;
+    flex-wrap: wrap;
+}
 button{
     background: #250b70;
     color: white;
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 button:hover{
     color: #250b70;
     background: white;
+}
+dialog{
+    transform: scale(1.5);
 }
 @keyframes logo {
     0%{

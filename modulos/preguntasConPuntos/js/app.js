@@ -92,6 +92,8 @@ function validarRespuestas(valor) {
 ✅ Correctas: ${correctas}
 ❌ Incorrectas: ${incorrectas}
 🎯 Puntos Totales: ${puntos.reduce((acu, p) => acu + p, 0)}`);
+h2.textContent = "Volver a inicio";
+h2.addEventListener("click", () => alert("No hay inicio"))
 }
 
 obtenerPreguntas();
