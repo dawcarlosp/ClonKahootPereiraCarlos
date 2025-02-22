@@ -5,19 +5,18 @@ let dialog = document.getElementById("modal");
 let botones = document.querySelectorAll("button");
 let posiblesRespuestas = document.getElementById("posiblesRespuestas");
 let h2 = document.getElementById("pregunta");
-/*
-let intervalo = setInterval(cuentaAtras, 1000);
+let intervalo ;
 function cuentaAtras (){
     h1.textContent = segundos - aux;
     aux++;
     if (aux == 12){
         clearInterval(intervalo);
         h1.textContent = "Fin";
-        dialog.style.display = "none";
-        dialog.close();
+        //dialog.style.display = "none";
+        //dialog.close();
     }
 }
-    */
+
 async function obtenerPreguntas() {
     try {
       const response = await fetch("js/preguntas.json");
@@ -27,6 +26,10 @@ async function obtenerPreguntas() {
       const preguntas = await response.json();
       preguntas.forEach((pregunta, index) => {
         setTimeout(() =>{
+          clearInterval(intervalo);
+          aux = 0;
+          segundos = 10;
+          intervalo = setInterval(cuentaAtras, 1000);
             h2.textContent = pregunta.pregunta;
             posiblesRespuestas.innerHTML ="";
             let respuestas = pregunta.respuestas;
@@ -39,7 +42,7 @@ async function obtenerPreguntas() {
               boton.addEventListener("click", () => validarRespuestas(boton.value) )
             })
             
-        }, 10000*index)
+        }, 12000*index)
       })
     } catch (error) {
       console.error("Error:", error);
