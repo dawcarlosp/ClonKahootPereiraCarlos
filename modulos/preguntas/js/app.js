@@ -28,7 +28,13 @@ async function obtenerPreguntas() {
       preguntas.forEach((pregunta, index) => {
         setTimeout(() =>{
             h2.textContent = pregunta.pregunta;
-            botones.forEach(boton => boton.textContent = pregunta.repuestas)
+            let respuestas = pregunta.respuestas;
+            respuestas.forEach((respuesta)  =>
+            {let boton = document.createElement("button");
+              boton.textContent = respuesta.texto;
+              posiblesRespuestas.appendChild(boton);
+            })
+            botones.forEach(boton => boton.textContent = respuestas[3].texto)
         }, 10000*index)
       })
     } catch (error) {
