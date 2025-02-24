@@ -1,0 +1,12 @@
+[
+    {
+        "id": 11,
+        "pregunta": "¿Qué es una clave primaria en una base de datos relacional?",
+        "respuestas": [
+            { "texto": "Un campo que permite valores duplicados", "correcta": false },
+            { "texto": "Un campo que identifica de manera única cada fila en una tabla", "correcta": true },
+            { "texto": "Un índice secundario de búsqueda", "correcta": false },
+            { "texto": "Una clave que siempre debe ser de tipo numérico", "correcta": false }
+        ]
+    }
+]
