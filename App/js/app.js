@@ -139,14 +139,19 @@ Incorrectas: ${incorrectas}
 Puntos Totales: ${puntos.reduce((acu, p) => acu + p, 0)}`);
 h2.textContent = "Volver a inicio";
 }
+
 //Evento fuera de mostrar resultados
 h2.addEventListener("click", recrearInicio )
+
 //Intentar recrear el inicio
 function recrearInicio(){
+  if(h2.textContent == "Volver a inicio"){
   h1.style.display = "none";
   dialog.close();
   dialog.style.display = "none";
   dialogo.showModal();
   dialogo.style.display = "flex";
+  //Cuando el usuario quiera volver a inicio, para que el change del select no de problemas si quiere volver a jugar el mismo
   juegos.value = "";
+  }
 }
