@@ -1,0 +1,102 @@
+[
+    {
+        "id": 11,
+        "pregunta": "¿Qué es una clave primaria en una base de datos relacional?",
+        "respuestas": [
+            { "texto": "Un campo que permite valores duplicados", "correcta": false },
+            { "texto": "Un campo que identifica de manera única cada fila en una tabla", "correcta": true },
+            { "texto": "Un índice secundario de búsqueda", "correcta": false },
+            { "texto": "Una clave que siempre debe ser de tipo numérico", "correcta": false }
+        ]
+    },
+    {
+        "id": 12,
+        "pregunta": "¿Cuál de los siguientes NO es un modelo de base de datos?",
+        "respuestas": [
+            { "texto": "Relacional", "correcta": false },
+            { "texto": "Jerárquico", "correcta": false },
+            { "texto": "Funcional", "correcta": true },
+            { "texto": "Orientado a objetos", "correcta": false }
+        ]
+    },
+    {
+        "id": 13,
+        "pregunta": "¿Qué lenguaje se usa para consultar bases de datos relacionales?",
+        "respuestas": [
+            { "texto": "HTML", "correcta": false },
+            { "texto": "SQL", "correcta": true },
+            { "texto": "Python", "correcta": false },
+            { "texto": "JSON", "correcta": false }
+        ]
+    },
+    {
+        "id": 14,
+        "pregunta": "¿Qué significa la sigla ACID en bases de datos?",
+        "respuestas": [
+            { "texto": "Atomicidad, Consistencia, Aislamiento, Durabilidad", "correcta": true },
+            { "texto": "Alta disponibilidad, Control, Integridad, Distribución", "correcta": false },
+            { "texto": "Acceso, Consulta, Integridad, Datos", "correcta": false },
+            { "texto": "Automatización, Concurrencia, Índices, Distribución", "correcta": false }
+        ]
+    },
+    {
+        "id": 15,
+        "pregunta": "¿Qué tipo de JOIN en SQL devuelve solo las filas que tienen coincidencias en ambas tablas?",
+        "respuestas": [
+            { "texto": "LEFT JOIN", "correcta": false },
+            { "texto": "RIGHT JOIN", "correcta": false },
+            { "texto": "INNER JOIN", "correcta": true },
+            { "texto": "FULL OUTER JOIN", "correcta": false }
+        ]
+    },
+    {
+        "id": 16,
+        "pregunta": "¿Qué comando en SQL se usa para agregar una nueva fila en una tabla?",
+        "respuestas": [
+            { "texto": "INSERT INTO", "correcta": true },
+            { "texto": "UPDATE", "correcta": false },
+            { "texto": "DELETE", "correcta": false },
+            { "texto": "ALTER TABLE", "correcta": false }
+        ]
+    },
+    {
+        "id": 17,
+        "pregunta": "¿Qué tipo de base de datos almacena información en formato clave-valor?",
+        "respuestas": [
+            { "texto": "Relacional", "correcta": false },
+            { "texto": "NoSQL", "correcta": true },
+            { "texto": "Jerárquica", "correcta": false },
+            { "texto": "Distribuida", "correcta": false }
+        ]
+    },
+    {
+        "id": 18,
+        "pregunta": "¿Cuál de las siguientes es una base de datos NoSQL?",
+        "respuestas": [
+            { "texto": "MySQL", "correcta": false },
+            { "texto": "PostgreSQL", "correcta": false },
+            { "texto": "MongoDB", "correcta": true },
+            { "texto": "Oracle", "correcta": false }
+        ]
+    },
+    {
+        "id": 19,
+        "pregunta": "¿Qué significa la sigla SQL?",
+        "respuestas": [
+            { "texto": "Standard Query Language", "correcta": false },
+            { "texto": "Structured Query Language", "correcta": true },
+            { "texto": "System Query Language", "correcta": false },
+            { "texto": "Simple Query Language", "correcta": false }
+        ]
+    },
+    {
+        "id": 20,
+        "pregunta": "¿Qué hace el comando DELETE en SQL?",
+        "respuestas": [
+            { "texto": "Elimina una base de datos completa", "correcta": false },
+            { "texto": "Elimina filas de una tabla según una condición", "correcta": true },
+            { "texto": "Elimina la estructura de una tabla", "correcta": false },
+            { "texto": "Elimina un usuario de la base de datos", "correcta": false }
+        ]
+    }
+]

@@ -46,7 +46,7 @@ function dialogStyle(){
    document.body.style.flexDirection="column";
 }
 //Una vez que el usuario eliga un juego ocultamos el select y mostramos lo que nos interesa
-juegos.addEventListener("change", () => {obtenerPreguntas(); dialogStyle();});
+juegos.addEventListener("change", () => {obtenerPreguntas(juegos.value); dialogStyle();});
 //Intento de integrar las preguntas
 //Muestra la cuenta regresiva y se encarga de manipular el dom, también si no se responde a tiempo suma las incorrectas
 function cuentaAtras() {
@@ -85,10 +85,10 @@ function mostrarPregunta(pregunta) {
     boton.addEventListener("click", () => validarRespuestas(boton.value));
   });
 }
-async function obtenerPreguntas() {
+async function obtenerPreguntas(value) {
   //dialog.showModal();
   try {
-    const response = await fetch("js/preguntas.json");
+    const response = await fetch(value);
     if (!response.ok) {
       throw new Error("Error al obtener las preguntas");
     }
@@ -126,10 +126,10 @@ function validarRespuestas(valor) {
 //Para mostrar los resultados
 
   function mostrarResultados() {
-    alert(`🏆 Resultados finales: 
-✅ Correctas: ${correctas}
-❌ Incorrectas: ${incorrectas}
-🎯 Puntos Totales: ${puntos.reduce((acu, p) => acu + p, 0)}`);
+    alert(`Resultados finales: 
+Correctas: ${correctas}
+Incorrectas: ${incorrectas}
+Puntos Totales: ${puntos.reduce((acu, p) => acu + p, 0)}`);
 h2.textContent = "Volver a inicio";
 h2.addEventListener("click", () => alert("No hay inicio"))
 }
