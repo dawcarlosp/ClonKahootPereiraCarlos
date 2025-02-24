@@ -133,10 +133,23 @@ function validarRespuestas(boton) {
 //Para mostrar los resultados
 
   function mostrarResultados() {
-    alert(`Resultados finales: 
-Correctas: ${correctas}
-Incorrectas: ${incorrectas}
-Puntos Totales: ${puntos.reduce((acu, p) => acu + p, 0)}`);
+    //Les asignamos un id para poder borrarlo en la siguiente partida
+    let r = document.createElement("p");
+    r.id = "r";
+    r.textContent = `Resultados Finales:`;
+    let correctasP = document.createElement("p");
+    correctasP.id = "correctasP";
+    let incorrectasP = document.createElement("p");
+    incorrectasP.id = "incorrectasP";
+    let puntosMsg = document.createElement("p");
+    puntosMsg.id = "puntosMsg";
+    correctasP.textContent = `Correctas: ${correctas}`;
+    incorrectasP.textContent = `Incorrectas: ${incorrectas}`;
+    puntosMsg.textContent = `Puntos totales: ${puntos.reduce((acu,p) => acu + p, 0)}`;
+    dialog.appendChild(r);
+    dialog.appendChild(correctasP);
+    dialog.appendChild(incorrectasP);
+    dialog.appendChild(puntosMsg);
 h2.textContent = "Volver a inicio";
 }
 
@@ -153,5 +166,12 @@ function recrearInicio(){
   dialogo.style.display = "flex";
   //Cuando el usuario quiera volver a inicio, para que el change del select no de problemas si quiere volver a jugar el mismo
   juegos.value = "";
+  //Borrar los resultados anteriores
+  if(document.getElementById("r")){
+    dialog.removeChild(document.getElementById("r"));
+    dialog.removeChild(document.getElementById("correctasP"));
+    dialog.removeChild(document.getElementById("incorrectasP"));
+    dialog.removeChild(document.getElementById("puntosMsg"));
+  }
   }
 }
