@@ -38,6 +38,37 @@ select{
 h1{
     color: white;
 }
+
+h2{
+    cursor: pointer;
+}
+#cuentaAtras{
+    display: flex;
+    flex-direction: column;
+    animation: logo 5s infinite;
+}
+#modal{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+#posiblesRespuestas{
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    background: #250b70;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    color: #250b70;
+    background: white;
+}
 @keyframes logo {
     0%{
         transform: scale(1.1);

@@ -1,13 +1,19 @@
 //Variables
+//Select que va permitir seleccionar diferentes valores, los cuales usaremos para elegir el json del que vamos a extraer los datos
 let juegos = document.getElementById("juegos");
+//Contiene el logo inicial, solo va a aparecer 5 segundos
 let dialogo = document.getElementById("dialogo");
 let segundos = 10;
 let aux = 0;
+//Donde se vera la cuenta atrás, lo ocultamos de esta manera cutre para que no apezca con la intro al principio
 let h1 = document.getElementById("cuentaAtras");
 h1.style.display = "none";
+//Aqui se va a visualizar las pregunta con las respuestas, también se oculta al principio
 let dialog = document.getElementById("modal");
-let botones = document.querySelectorAll("button");
+dialog.style.display = "none";
+//Padre al que le haremos el append de botones que contienen las respuestas
 let posiblesRespuestas = document.getElementById("posiblesRespuestas");
+//Donde mostraremos la pregunta
 let h2 = document.getElementById("pregunta");
 let intervalo;
 let puntos = [];
@@ -26,8 +32,21 @@ function mostrarDialogo(){
    dialogo.showModal();
 }
 setTimeout(ocultarLogo, 5000);
+//Estilo que tenia el dialogo donde se visualizan las preguntas
+function dialogStyle(){
+  dialogo.close();
+  dialog.style.display="flex";
+  dialog.style.position ="relative";
+  dialog.style.flexDirection="column";
+  dialog.style.alignItems="center";
+  dialog.style.borderRadius=10;
+   h1.style.display = "block";
+   //Forzar que el titulo y el modal aparezcan uno debajo de otro
+   document.body.style.display="flex";
+   document.body.style.flexDirection="column";
+}
 //Una vez que el usuario eliga un juego ocultamos el select y mostramos lo que nos interesa
-juegos.addEventListener("change", () => {dialogo.close(); obtenerPreguntas();});
+juegos.addEventListener("change", () => {obtenerPreguntas(); dialogStyle();});
 //Intento de integrar las preguntas
 //Muestra la cuenta regresiva y se encarga de manipular el dom, también si no se responde a tiempo suma las incorrectas
 function cuentaAtras() {
@@ -67,6 +86,7 @@ function mostrarPregunta(pregunta) {
   });
 }
 async function obtenerPreguntas() {
+  //dialog.showModal();
   try {
     const response = await fetch("js/preguntas.json");
     if (!response.ok) {
