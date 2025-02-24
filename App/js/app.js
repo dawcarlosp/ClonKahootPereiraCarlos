@@ -174,4 +174,8 @@ function recrearInicio(){
     dialog.removeChild(document.getElementById("puntosMsg"));
   }
   }
+  //También tenemos que resetar las variables de las puntuaciones
+  incorrectas = 0;
+  correctas = 0;
+  puntos = [];
 }
