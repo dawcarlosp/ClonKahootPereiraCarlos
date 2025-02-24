@@ -1,6 +1,10 @@
+//Variables
+let juegos = document.getElementById("juegos");
+let dialogo = document.getElementById("dialogo");
 let segundos = 10;
 let aux = 0;
 let h1 = document.getElementById("cuentaAtras");
+h1.style.display = "none";
 let dialog = document.getElementById("modal");
 let botones = document.querySelectorAll("button");
 let posiblesRespuestas = document.getElementById("posiblesRespuestas");
@@ -11,6 +15,20 @@ let correctas = 0;
 let incorrectas = 0;
 let preguntasTotales;
 let respondido = false;
+let origen;
+//intro
+function ocultarLogo (){
+    let logo = document.getElementById("logo");
+    logo.style.display = "none";
+    mostrarDialogo();
+}
+function mostrarDialogo(){
+   dialogo.showModal();
+}
+setTimeout(ocultarLogo, 5000);
+//Una vez que el usuario eliga un juego ocultamos el select y mostramos lo que nos interesa
+juegos.addEventListener("change", () => {dialogo.close(); obtenerPreguntas();});
+//Intento de integrar las preguntas
 //Muestra la cuenta regresiva y se encarga de manipular el dom, también si no se responde a tiempo suma las incorrectas
 function cuentaAtras() {
   h1.textContent = segundos - aux;
@@ -95,5 +113,3 @@ function validarRespuestas(valor) {
 h2.textContent = "Volver a inicio";
 h2.addEventListener("click", () => alert("No hay inicio"))
 }
-
-obtenerPreguntas();

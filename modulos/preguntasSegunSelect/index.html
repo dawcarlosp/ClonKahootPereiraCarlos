@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cuenta Atrás</title>
+  </head>
+  <body>
+    <div id="logo">
+      <img src="imgs/ajup.png" alt="cajup">
+      <p id="logoTexto">Desarrollado por Carlos Pereira</p>
+  </div>
+  <dialog id="dialogo">
+      <h1>Juegos disponibles!</h1>
+      <select name="juegos" id="juegos">
+          <option value="js/preguntas.json">Historia</option>
+          <option value="js/basesdedatos.json">Bases de datos</option>
+          <option value="">Lenguaje de marcas</option>
+          <option value="">Sistemas informáticos</option>
+          <option value="">Entornos de desarrollo</option>
+          <option value="">Inglés</option>
+      </select>
+  </dialog>
+  <h1 id="cuentaAtras">Tienes 10 segundos para responder</h1>
+  <dialog id="modal">
+    <h2 id="pregunta">Pregunta</h2>
+    <div id="posiblesRespuestas">
+      
+    </div>
+  </dialog>
+  </body>
+</html>
