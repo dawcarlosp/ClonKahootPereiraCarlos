@@ -82,7 +82,7 @@ function mostrarPregunta(pregunta) {
     boton.value = respuesta.correcta;
     boton.textContent = respuesta.texto;
     posiblesRespuestas.appendChild(boton);
-    boton.addEventListener("click", () => validarRespuestas(boton.value));
+    boton.addEventListener("click", () => validarRespuestas(boton));
   });
 }
 async function obtenerPreguntas(value) {
@@ -108,7 +108,9 @@ async function obtenerPreguntas(value) {
   }
 }
 //Se encarga de ver si la respuesta es correcta o no
-function validarRespuestas(valor) {
+function validarRespuestas(boton) {
+  valor = boton.value;
+  alert(valor)
   //Esto lo hacemos, porque no queremos se puedan seleccionar varias respuestas
   if (respondido) return;
   clearInterval(intervalo);
@@ -117,7 +119,11 @@ function validarRespuestas(valor) {
   if (valor === "true") {
     correctas++;
     puntos.push(puntuacion);
+    boton.style.background = "green";
+    boton.style.color = "black";
   } else {
+    boton.style.background = "red";
+    boton.style.color = "black";
     incorrectas++;
     puntos.push(0);
   }
@@ -142,4 +148,5 @@ function recrearInicio(){
   dialog.style.display = "none";
   dialogo.showModal();
   dialogo.style.display = "flex";
+  juegos.value = "";
 }
