@@ -1,4 +1,6 @@
 //Variables
+//variable para saber si ya estamos con la ultima pregunta, para cambiar el texto de siguiente pregunta
+let ultimaPregunta = false;
 //Select que va permitir seleccionar diferentes valores, los cuales usaremos para elegir el json del que vamos a extraer los datos
 let juegos = document.getElementById("juegos");
 //Contiene el logo inicial, solo va a aparecer 5 segundos
@@ -41,6 +43,7 @@ function dialogStyle(){
   dialog.style.alignItems="center";
   dialog.style.borderRadius=10;
    h1.style.display = "block";
+   h1.style.transform = 2;   
    //Forzar que el titulo y el modal aparezcan uno debajo de otro
    document.body.style.display="flex";
    document.body.style.flexDirection="column";
@@ -63,7 +66,10 @@ function cuentaAtras() {
 //Simplemente se encarga de entre pregunta y pregunta, agregar un mensaje para dar una sensación
 function siguientePregunta() {
   setTimeout(() => {
-    h2.textContent = "Cargando siguiente pregunta....";
+    if(ultimaPregunta){
+      h2.textContent = "Cargando resultados...";
+    }else{
+    h2.textContent = "Cargando siguiente pregunta...."};
     posiblesRespuestas.innerHTML = "";
   }, 1000);
 }
@@ -97,6 +103,11 @@ async function obtenerPreguntas(value) {
     preguntasTotales = preguntas.length;
     preguntas.forEach((pregunta, index) => {
       setTimeout(() => {
+        if ( index == (preguntas.length-1)){
+          ultimaPregunta = true;
+        }else{
+          ultimaPregunta = false;
+        }
         mostrarPregunta(pregunta)
 ;      }, 13000 * index);
     });

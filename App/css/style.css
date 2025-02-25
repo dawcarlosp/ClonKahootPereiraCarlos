@@ -46,6 +46,7 @@ h2{
     display: flex;
     flex-direction: column;
     animation: logo 5s infinite;
+    transform: scale(2);
 }
 #modal{
     display: flex;
