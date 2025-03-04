@@ -1,12 +1,102 @@
 [
     {
-        "id": 11,
-        "pregunta": "¿Qué es una clave primaria en una base de datos relacional?",
+        "id": 1,
+        "pregunta": "¿Qué significa HTML?",
         "respuestas": [
-            { "texto": "Un campo que permite valores duplicados", "correcta": false },
-            { "texto": "Un campo que identifica de manera única cada fila en una tabla", "correcta": true },
-            { "texto": "Un índice secundario de búsqueda", "correcta": false },
-            { "texto": "Una clave que siempre debe ser de tipo numérico", "correcta": false }
+            { "texto": "Hyper Text Markup Language", "correcta": true },
+            { "texto": "High Tech Modern Language", "correcta": false },
+            { "texto": "Home Tool Markup Language", "correcta": false },
+            { "texto": "Hyperlink and Text Markup Language", "correcta": false }
+        ]
+    },
+    {
+        "id": 2,
+        "pregunta": "¿Cuál de las siguientes NO es una etiqueta válida en HTML?",
+        "respuestas": [
+            { "texto": "<div>", "correcta": false },
+            { "texto": "<span>", "correcta": false },
+            { "texto": "<section>", "correcta": false },
+            { "texto": "<format>", "correcta": true }
+        ]
+    },
+    {
+        "id": 3,
+        "pregunta": "¿Cuál es el propósito principal de CSS?",
+        "respuestas": [
+            { "texto": "Definir la estructura de una página web", "correcta": false },
+            { "texto": "Estilizar y dar formato a las páginas web", "correcta": true },
+            { "texto": "Ejecutar scripts del lado del cliente", "correcta": false },
+            { "texto": "Almacenar datos en una base de datos", "correcta": false }
+        ]
+    },
+    {
+        "id": 4,
+        "pregunta": "¿Qué lenguaje de marcas se utiliza comúnmente para definir documentos estructurados?",
+        "respuestas": [
+            { "texto": "HTML", "correcta": false },
+            { "texto": "XML", "correcta": true },
+            { "texto": "CSS", "correcta": false },
+            { "texto": "JavaScript", "correcta": false }
+        ]
+    },
+    {
+        "id": 5,
+        "pregunta": "¿Cuál de las siguientes opciones es un formato basado en XML?",
+        "respuestas": [
+            { "texto": "JSON", "correcta": false },
+            { "texto": "Markdown", "correcta": false },
+            { "texto": "SVG", "correcta": true },
+            { "texto": "CSS", "correcta": false }
+        ]
+    },
+    {
+        "id": 6,
+        "pregunta": "¿Qué etiqueta en HTML se usa para definir una lista desordenada?",
+        "respuestas": [
+            { "texto": "<ul>", "correcta": true },
+            { "texto": "<ol>", "correcta": false },
+            { "texto": "<li>", "correcta": false },
+            { "texto": "<dl>", "correcta": false }
+        ]
+    },
+    {
+        "id": 7,
+        "pregunta": "¿Cuál de los siguientes lenguajes de marcas se utiliza en el desarrollo de aplicaciones móviles?",
+        "respuestas": [
+            { "texto": "XML", "correcta": true },
+            { "texto": "YAML", "correcta": false },
+            { "texto": "LaTeX", "correcta": false },
+            { "texto": "SQL", "correcta": false }
+        ]
+    },
+    {
+        "id": 8,
+        "pregunta": "¿Qué atributo en HTML se usa para especificar una dirección URL en un enlace?",
+        "respuestas": [
+            { "texto": "src", "correcta": false },
+            { "texto": "href", "correcta": true },
+            { "texto": "link", "correcta": false },
+            { "texto": "url", "correcta": false }
+        ]
+    },
+    {
+        "id": 9,
+        "pregunta": "¿Cuál de las siguientes NO es una ventaja de usar XML?",
+        "respuestas": [
+            { "texto": "Es legible tanto por humanos como por máquinas", "correcta": false },
+            { "texto": "Es extensible y flexible", "correcta": false },
+            { "texto": "Permite definir etiquetas personalizadas", "correcta": false },
+            { "texto": "Es más rápido que JSON en la transmisión de datos", "correcta": true }
+        ]
+    },
+    {
+        "id": 10,
+        "pregunta": "¿Qué significa la sigla SVG en el contexto de los lenguajes de marcas?",
+        "respuestas": [
+            { "texto": "Scalable Vector Graphics", "correcta": true },
+            { "texto": "Structured Vector Grid", "correcta": false },
+            { "texto": "Simple View Graphics", "correcta": false },
+            { "texto": "Static Visual Graphics", "correcta": false }
         ]
     }
 ]

@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "pregunta": "¿Qué es un sistema operativo?",
+        "respuestas": [
+            { "texto": "Un software que gestiona los recursos de hardware y software de un sistema informático", "correcta": true },
+            { "texto": "Un programa de ofimática", "correcta": false },
+            { "texto": "Un lenguaje de programación", "correcta": false },
+            { "texto": "Un tipo de base de datos", "correcta": false }
+        ]
+    },
+    {
+        "id": 2,
+        "pregunta": "¿Cuál de los siguientes es un sistema operativo?",
+        "respuestas": [
+            { "texto": "Windows", "correcta": true },
+            { "texto": "Google Chrome", "correcta": false },
+            { "texto": "Python", "correcta": false },
+            { "texto": "Oracle", "correcta": false }
+        ]
+    },
+    {
+        "id": 3,
+        "pregunta": "¿Qué componente es el encargado de procesar las instrucciones en un sistema informático?",
+        "respuestas": [
+            { "texto": "La memoria RAM", "correcta": false },
+            { "texto": "El procesador (CPU)", "correcta": true },
+            { "texto": "El disco duro", "correcta": false },
+            { "texto": "La tarjeta gráfica", "correcta": false }
+        ]
+    },
+    {
+        "id": 4,
+        "pregunta": "¿Cuál de los siguientes NO es un tipo de memoria en un sistema informático?",
+        "respuestas": [
+            { "texto": "RAM", "correcta": false },
+            { "texto": "ROM", "correcta": false },
+            { "texto": "Cache", "correcta": false },
+            { "texto": "CPU", "correcta": true }
+        ]
+    },
+    {
+        "id": 5,
+        "pregunta": "¿Cuál es la función principal de la memoria RAM?",
+        "respuestas": [
+            { "texto": "Almacenar permanentemente los datos del sistema", "correcta": false },
+            { "texto": "Ejecutar y almacenar temporalmente datos de programas en uso", "correcta": true },
+            { "texto": "Controlar los periféricos de entrada y salida", "correcta": false },
+            { "texto": "Almacenar copias de seguridad del sistema", "correcta": false }
+        ]
+    },
+    {
+        "id": 6,
+        "pregunta": "¿Cuál de las siguientes opciones representa un software de código abierto?",
+        "respuestas": [
+            { "texto": "Windows 10", "correcta": false },
+            { "texto": "Linux", "correcta": true },
+            { "texto": "Microsoft Office", "correcta": false },
+            { "texto": "Adobe Photoshop", "correcta": false }
+        ]
+    },
+    {
+        "id": 7,
+        "pregunta": "¿Cuál de las siguientes opciones es un periférico de salida?",
+        "respuestas": [
+            { "texto": "Teclado", "correcta": false },
+            { "texto": "Monitor", "correcta": true },
+            { "texto": "Escáner", "correcta": false },
+            { "texto": "Micrófono", "correcta": false }
+        ]
+    },
+    {
+        "id": 8,
+        "pregunta": "¿Qué es un sistema de archivos?",
+        "respuestas": [
+            { "texto": "Un programa de ofimática", "correcta": false },
+            { "texto": "Un método para organizar y almacenar datos en dispositivos de almacenamiento", "correcta": true },
+            { "texto": "Un protocolo de red", "correcta": false },
+            { "texto": "Un tipo de malware", "correcta": false }
+        ]
+    },
+    {
+        "id": 9,
+        "pregunta": "¿Qué es el firmware en un sistema informático?",
+        "respuestas": [
+            { "texto": "Un programa malicioso", "correcta": false },
+            { "texto": "Un software embebido en hardware que permite su funcionamiento básico", "correcta": true },
+            { "texto": "Un sistema operativo de código abierto", "correcta": false },
+            { "texto": "Un lenguaje de programación", "correcta": false }
+        ]
+    },
+    {
+        "id": 10,
+        "pregunta": "¿Cuál de los siguientes componentes es fundamental para la conectividad en una red informática?",
+        "respuestas": [
+            { "texto": "Tarjeta de sonido", "correcta": false },
+            { "texto": "Tarjeta de red", "correcta": true },
+            { "texto": "Fuente de alimentación", "correcta": false },
+            { "texto": "Unidad de disco óptico", "correcta": false }
+        ]
+    }
+]

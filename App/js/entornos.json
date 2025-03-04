@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "pregunta": "¿Qué es un entorno de desarrollo integrado (IDE)?",
+        "respuestas": [
+            { "texto": "Un hardware especializado para programar", "correcta": false },
+            { "texto": "Un software que proporciona herramientas para la programación", "correcta": true },
+            { "texto": "Un tipo de lenguaje de programación", "correcta": false },
+            { "texto": "Un sistema operativo para programadores", "correcta": false }
+        ]
+    },
+    {
+        "id": 2,
+        "pregunta": "¿Cuál de los siguientes NO es un IDE?",
+        "respuestas": [
+            { "texto": "Visual Studio Code", "correcta": false },
+            { "texto": "Eclipse", "correcta": false },
+            { "texto": "Sublime Text", "correcta": false },
+            { "texto": "Windows Defender", "correcta": true }
+        ]
+    },
+    {
+        "id": 3,
+        "pregunta": "¿Qué característica es común en un IDE?",
+        "respuestas": [
+            { "texto": "Un compilador y un depurador", "correcta": true },
+            { "texto": "Solo un editor de texto", "correcta": false },
+            { "texto": "Un navegador web integrado", "correcta": false },
+            { "texto": "Un sistema operativo embebido", "correcta": false }
+        ]
+    },
+    {
+        "id": 4,
+        "pregunta": "¿Cuál de los siguientes IDEs es más utilizado para el desarrollo en Java?",
+        "respuestas": [
+            { "texto": "PyCharm", "correcta": false },
+            { "texto": "Eclipse", "correcta": true },
+            { "texto": "Xcode", "correcta": false },
+            { "texto": "Android Studio", "correcta": false }
+        ]
+    },
+    {
+        "id": 5,
+        "pregunta": "¿Para qué lenguaje de programación está diseñado principalmente Xcode?",
+        "respuestas": [
+            { "texto": "Java", "correcta": false },
+            { "texto": "Swift", "correcta": true },
+            { "texto": "Python", "correcta": false },
+            { "texto": "C#", "correcta": false }
+        ]
+    },
+    {
+        "id": 6,
+        "pregunta": "¿Qué función cumple un depurador en un entorno de desarrollo?",
+        "respuestas": [
+            { "texto": "Optimizar el código automáticamente", "correcta": false },
+            { "texto": "Detectar y corregir errores en el código", "correcta": true },
+            { "texto": "Convertir código fuente en código ejecutable", "correcta": false },
+            { "texto": "Crear interfaces gráficas para el usuario", "correcta": false }
+        ]
+    },
+    {
+        "id": 7,
+        "pregunta": "¿Qué tipo de entorno de desarrollo se usa en la nube sin instalación local?",
+        "respuestas": [
+            { "texto": "IDE basado en escritorio", "correcta": false },
+            { "texto": "IDE basado en la nube", "correcta": true },
+            { "texto": "Entorno de desarrollo físico", "correcta": false },
+            { "texto": "Sistema operativo virtual", "correcta": false }
+        ]
+    },
+    {
+        "id": 8,
+        "pregunta": "¿Cuál de los siguientes IDEs es el más recomendado para desarrollo en Python?",
+        "respuestas": [
+            { "texto": "PyCharm", "correcta": true },
+            { "texto": "NetBeans", "correcta": false },
+            { "texto": "IntelliJ IDEA", "correcta": false },
+            { "texto": "Code::Blocks", "correcta": false }
+        ]
+    },
+    {
+        "id": 9,
+        "pregunta": "¿Qué sistema de control de versiones se integra comúnmente en entornos de desarrollo?",
+        "respuestas": [
+            { "texto": "Git", "correcta": true },
+            { "texto": "MySQL", "correcta": false },
+            { "texto": "Docker", "correcta": false },
+            { "texto": "Apache", "correcta": false }
+        ]
+    },
+    {
+        "id": 10,
+        "pregunta": "¿Cuál de los siguientes editores de código es desarrollado por Microsoft?",
+        "respuestas": [
+            { "texto": "Atom", "correcta": false },
+            { "texto": "Visual Studio Code", "correcta": true },
+            { "texto": "Brackets", "correcta": false },
+            { "texto": "BlueJ", "correcta": false }
+        ]
+    }
+]

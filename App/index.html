@@ -8,6 +8,10 @@
     <title>Cuenta Atrás</title>
   </head>
   <body>
+    <audio id="musica" autoplay loop>
+      <source src="mp3/cajup.mp3" type="audio/mp3">
+      Tu navegador no soporta el audio.
+  </audio>
     <!--Solo aparece 5 segundos al principio-->
     <div id="logo">
       <img src="imgs/ajup.png" alt="cajup">
@@ -18,6 +22,7 @@
       <h1>Juegos disponibles!</h1>
       <select name="juegos" id="juegos">
         <option value="" default>--Seleccione una temática--</option>
+        <option value="js/futbol.json">Fútbol</option>
           <option value="js/preguntas.json">Historia</option>
           <option value="js/basesdedatos.json">Bases de datos</option>
           <option value="js/lenguajeMarcas.json">Lenguaje de marcas</option>

@@ -121,7 +121,6 @@ async function obtenerPreguntas(value) {
 //Se encarga de ver si la respuesta es correcta o no
 function validarRespuestas(boton) {
   valor = boton.value;
-  alert(valor)
   //Esto lo hacemos, porque no queremos se puedan seleccionar varias respuestas
   if (respondido) return;
   clearInterval(intervalo);
@@ -190,3 +189,14 @@ function recrearInicio(){
   correctas = 0;
   puntos = [];
 }
+//Musica
+document.addEventListener("DOMContentLoaded", function () {
+  let audio = document.getElementById("musica");
+  audio.play().catch(error => {
+      console.log("Autoplay bloqueado, esperando interacción del usuario.");
+  });
+
+  document.addEventListener("click", function () {
+      audio.play();
+  });
+});

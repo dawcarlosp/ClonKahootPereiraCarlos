@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "pregunta": "What does HTML stand for?",
+        "respuestas": [
+            { "texto": "Hyperlinks and Text Markup Language", "correcta": false },
+            { "texto": "Hyper Text Markup Language", "correcta": true },
+            { "texto": "High Tech Modern Language", "correcta": false },
+            { "texto": "Home Tool Markup Language", "correcta": false }
+        ]
+    },
+    {
+        "id": 2,
+        "pregunta": "What is the meaning of 'responsive design'?",
+        "respuestas": [
+            { "texto": "A design that responds to user queries", "correcta": false },
+            { "texto": "A web design approach that adapts to different screen sizes", "correcta": true },
+            { "texto": "A type of fast-loading website", "correcta": false },
+            { "texto": "A design pattern for web applications", "correcta": false }
+        ]
+    },
+    {
+        "id": 3,
+        "pregunta": "Which of the following is a common front-end programming language?",
+        "respuestas": [
+            { "texto": "Java", "correcta": false },
+            { "texto": "Python", "correcta": false },
+            { "texto": "JavaScript", "correcta": true },
+            { "texto": "SQL", "correcta": false }
+        ]
+    },
+    {
+        "id": 4,
+        "pregunta": "What does 'CSS' stand for?",
+        "respuestas": [
+            { "texto": "Creative Style Sheets", "correcta": false },
+            { "texto": "Cascading Style Sheets", "correcta": true },
+            { "texto": "Computer Style System", "correcta": false },
+            { "texto": "Coding Style Syntax", "correcta": false }
+        ]
+    },
+    {
+        "id": 5,
+        "pregunta": "Which word best describes an API?",
+        "respuestas": [
+            { "texto": "Interface", "correcta": true },
+            { "texto": "Database", "correcta": false },
+            { "texto": "Compiler", "correcta": false },
+            { "texto": "Framework", "correcta": false }
+        ]
+    },
+    {
+        "id": 6,
+        "pregunta": "What does 'backend' refer to in web development?",
+        "respuestas": [
+            { "texto": "The part of a website that users see and interact with", "correcta": false },
+            { "texto": "The server-side logic, database, and application functionality", "correcta": true },
+            { "texto": "The section of a web page that contains images", "correcta": false },
+            { "texto": "The styling of a website", "correcta": false }
+        ]
+    },
+    {
+        "id": 7,
+        "pregunta": "Which of these is a JavaScript framework?",
+        "respuestas": [
+            { "texto": "React", "correcta": true },
+            { "texto": "Laravel", "correcta": false },
+            { "texto": "Django", "correcta": false },
+            { "texto": "Flask", "correcta": false }
+        ]
+    },
+    {
+        "id": 8,
+        "pregunta": "What does the term 'debugging' mean?",
+        "respuestas": [
+            { "texto": "Writing a program", "correcta": false },
+            { "texto": "Removing errors from a program", "correcta": true },
+            { "texto": "Optimizing a website’s design", "correcta": false },
+            { "texto": "Deploying a web application", "correcta": false }
+        ]
+    },
+    {
+        "id": 9,
+        "pregunta": "What is the purpose of a 'database' in web development?",
+        "respuestas": [
+            { "texto": "To store, manage, and retrieve data", "correcta": true },
+            { "texto": "To create dynamic web pages", "correcta": false },
+            { "texto": "To style a website", "correcta": false },
+            { "texto": "To debug a web application", "correcta": false }
+        ]
+    },
+    {
+        "id": 10,
+        "pregunta": "What does the HTTP acronym stand for?",
+        "respuestas": [
+            { "texto": "Hyper Text Transfer Protocol", "correcta": true },
+            { "texto": "High Technology Text Processing", "correcta": false },
+            { "texto": "Hyper Transfer Text Protocol", "correcta": false },
+            { "texto": "Hosting Transfer Text Processing", "correcta": false }
+        ]
+    }
+]

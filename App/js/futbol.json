@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "pregunta": "¿En qué año se fundó la Liga Española de Fútbol (LaLiga)?",
+        "respuestas": [
+            { "texto": "1920", "correcta": false },
+            { "texto": "1929", "correcta": true },
+            { "texto": "1934", "correcta": false },
+            { "texto": "1945", "correcta": false }
+        ]
+    },
+    {
+        "id": 2,
+        "pregunta": "¿Cuál fue el primer equipo en ganar la Liga Española?",
+        "respuestas": [
+            { "texto": "Real Madrid", "correcta": false },
+            { "texto": "Athletic Club", "correcta": false },
+            { "texto": "FC Barcelona", "correcta": false },
+            { "texto": "FC Barcelona", "correcta": true }
+        ]
+    },
+    {
+        "id": 3,
+        "pregunta": "¿Cuál es el club con más títulos de LaLiga?",
+        "respuestas": [
+            { "texto": "Atlético de Madrid", "correcta": false },
+            { "texto": "Real Madrid", "correcta": true },
+            { "texto": "FC Barcelona", "correcta": false },
+            { "texto": "Valencia CF", "correcta": false }
+        ]
+    },
+    {
+        "id": 4,
+        "pregunta": "¿En qué año la selección española ganó su primer Mundial de Fútbol?",
+        "respuestas": [
+            { "texto": "2002", "correcta": false },
+            { "texto": "2010", "correcta": true },
+            { "texto": "2014", "correcta": false },
+            { "texto": "1998", "correcta": false }
+        ]
+    },
+    {
+        "id": 5,
+        "pregunta": "¿Quién es el máximo goleador histórico de LaLiga?",
+        "respuestas": [
+            { "texto": "Cristiano Ronaldo", "correcta": false },
+            { "texto": "Lionel Messi", "correcta": true },
+            { "texto": "Raúl González", "correcta": false },
+            { "texto": "Telmo Zarra", "correcta": false }
+        ]
+    },
+    {
+        "id": 6,
+        "pregunta": "¿Qué equipo ganó la primera Copa del Rey en 1903?",
+        "respuestas": [
+            { "texto": "Real Madrid", "correcta": false },
+            { "texto": "Athletic Club", "correcta": false },
+            { "texto": "FC Barcelona", "correcta": false },
+            { "texto": "Club Vizcaya", "correcta": true }
+        ]
+    },
+    {
+        "id": 7,
+        "pregunta": "¿Qué entrenador llevó a España a ganar el Mundial de 2010?",
+        "respuestas": [
+            { "texto": "Luis Aragonés", "correcta": false },
+            { "texto": "Vicente del Bosque", "correcta": true },
+            { "texto": "Javier Clemente", "correcta": false },
+            { "texto": "Julen Lopetegui", "correcta": false }
+        ]
+    },
+    {
+        "id": 8,
+        "pregunta": "¿Cuál es el estadio más grande de España en términos de capacidad?",
+        "respuestas": [
+            { "texto": "Santiago Bernabéu", "correcta": false },
+            { "texto": "Camp Nou", "correcta": true },
+            { "texto": "Metropolitano", "correcta": false },
+            { "texto": "Mestalla", "correcta": false }
+        ]
+    },
+    {
+        "id": 9,
+        "pregunta": "¿Cuál de estos clubes NO ha ganado nunca LaLiga?",
+        "respuestas": [
+            { "texto": "Deportivo de La Coruña", "correcta": false },
+            { "texto": "Sevilla FC", "correcta": true },
+            { "texto": "Real Sociedad", "correcta": false },
+            { "texto": "Real Betis", "correcta": false }
+        ]
+    },
+    {
+        "id": 10,
+        "pregunta": "¿Qué jugador español ha ganado más Balones de Oro?",
+        "respuestas": [
+            { "texto": "Luis Suárez", "correcta": true },
+            { "texto": "Xavi Hernández", "correcta": false },
+            { "texto": "Raúl González", "correcta": false },
+            { "texto": "Andrés Iniesta", "correcta": false }
+        ]
+    }
+]
